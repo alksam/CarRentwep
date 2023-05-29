@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\billed\berline-2.jpg" />
+    <None Include="wwwroot\css\billed\berline-3.jpg" />
+    <None Include="wwwroot\css\billed\berline-4.jpg" />
+    <None Include="wwwroot\css\billed\berline-5.jpg" />
+    <None Include="wwwroot\css\billed\citadine-3.jpg" />
+    <None Include="wwwroot\css\billed\citadine-4.jpg" />
+    <None Include="wwwroot\css\billed\location.png" />
+    <None Include="wwwroot\css\billed\Skærmbillede.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RentCar">
+      <HintPath>..\rent car\bin\Debug\net6.0\RentCar.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,34 @@
+﻿@page
+@model CarRentwep.Pages.Cars.DeleteModel
+@{
+}
+<h1>Slet en Car</h1>
+
+<table class="table">
+    <thead>
+        <th></th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Id</td>
+            <td>@Model.carr.Id</td>
+        </tr>
+        <tr>
+            <td>Navn</td>
+            <td>@Model.carr.Name</td>
+        </tr><tr>
+            <td>Pris</td>
+            <td>@Model.carr.Pris</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<form method="post">
+    <div class="form-group">
+        <input type="submit" value="Slet car" asp-page-handler="Slet" asp-route-id="@Model.carr.Id" class="btn btn-danger" />
+
+        <input type="submit" value="Fortryd" asp-page-handler="Fortryd" class="btn btn-primary" />
+    </div>
+</form>
